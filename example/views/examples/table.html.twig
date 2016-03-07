@@ -1,0 +1,36 @@
+<view>
+
+    <h1>This is a simple table</h1>
+
+    <table>
+        <tr>
+            <th>Key</th>
+            <th>Key</th>
+        </tr>
+        {% for i in range(0,5) %}
+            <tr>
+                <td>{{ i }}</td>
+                <td>{{ random(['Lorem', 'Ipsum', 'Dolar', 'Sit', 'Amet', 'Consectetur', 'Adipiscing']) }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <any-key/>
+
+    <h1>This is an interactive table</h1>
+
+    <table interactive="true" pagination="false">
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+        {% for i in range(0,15) %}
+            <tr>
+                <td>{{ i }}</td>
+                <td>{{ random(['Lorem', 'Ipsum', 'Dolar', 'Sit', 'Amet', 'Consectetur', 'Adipiscing']) }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <redirect to="menu"></redirect>
+</view>

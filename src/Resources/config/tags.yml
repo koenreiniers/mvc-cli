@@ -1,0 +1,4 @@
+# WIP
+tags:
+    - { name: table, class: Kr\MvcCli\Directive\Output\Table }
+    - { name: choice, class: Kr\MvcCli\Directive\Input\Choice }

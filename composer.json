@@ -1,0 +1,23 @@
+{
+    "name": "koenreiniers/mvc-cli",
+    "type": "library",
+    "description": "",
+    "keywords": ["mvc", "cli"],
+    "homepage": "http://www.koenreiniers.nl/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Koen Reiniers",
+            "email": "contact@koenreiniers.nl",
+            "homepage": "http://www.koenreiniers.nl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Kr\\MvcCli\\": "src/"}
+    },
+    "require": {
+        "symfony/console": "^3.0",
+        "symfony/event-dispatcher": "^3.0",
+        "twig/twig": "^1.24"
+    }
+}

@@ -1,0 +1,50 @@
+<view>
+
+    <h1>Other input</h1>
+
+    <block>
+        <h2>Choice</h2>
+        <choice name="choice-answer">
+            <question>Lorem ipsum dolar</question>
+            <option value="lorem">Lorem</option>
+            <option value="ipsum">Ipsum</option>
+            <option value="dolar" default="true">Dolar</option>
+        </choice>
+
+        <text>You picked <v key="choice-answer"/></text>
+        <any-key/>
+    </block>
+
+    <text>You picked <v key="choice-answer"/></text>
+    <any-key/>
+
+
+    <h2>Ask</h2>
+    <ask name="ask-answer" default="Great">
+        <question>This is an open question</question>
+    </ask>
+
+    <text>You answered <v key="ask-answer"/></text>
+
+    <any-key/>
+
+    <ask name="ask-answer2" default="10">
+        <question>This question must be answered with a number between 0 and 10</question>
+        <constraint expr=":v >= 0"/>
+        <constraint expr=":v <= 10"/>
+    </ask>
+
+    <text>You answered <v key="ask-answer2"/></text>
+
+    <any-key/>
+
+
+
+    <h2>Confirm</h2>
+    <confirm name="confirm-answer" default="">Confirm this?</confirm>
+    <text>You picked <v key="confirm-answer"/></text>
+
+    <any-key/>
+
+    <redirect to="menu"></redirect>
+</view>
